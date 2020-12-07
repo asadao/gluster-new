@@ -1,0 +1,23 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: slow
+provisioner: kubernetes.io/glusterfs
+parameters:
+  resturl: "glusterfs-cluster"
+  restauthenabled: "false"
+  volumetype: "replicate:2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
